@@ -28,13 +28,13 @@
   # or
   jupyter notebook
   ```
-* Read the week's lab exercises notebook `week_N.inpy`
-* Add your code to the script `week_N.inpy`
+* Read the week's lab exercises notebook `week_N.ipynb`
+* Add your code to the script `week_N.ipynb`
 * Run each cell and make sure you have the correct answer and add your comments as a markdown if needed
 
 ## About
 
-This repository contains lab exercises for the [COMP0026 Image Processing](https://moodle.ucl.ac.uk/enrol/index.php?id=1381) module for taught MSc students at UCL, delivered in Autumn 2021. 
+This repository contains lab exercises for the [COMP0026 Image Processing](https://moodle.ucl.ac.uk/enrol/index.php?id=1381) module for taught undergrad and MSc students at UCL, delivered in Autumn 2021. 
 Exercises are designed to be attempted in the on-campus lab sessions on Thursday mornings, though you are free to do additional work in your own time if you wish.
 
 Lab attendance will be monitored, but the exercises are **not graded**. 
@@ -43,7 +43,7 @@ You are welcome to discuss and help each other with these tasks and to ask for a
 
 ### Contents
 
-Exercises for week *N* are specified in notebook `week_N.inpy`.
+Exercises for week *N* are specified in notebook `week_N.ipynb`.
 You should add your solution code and comments about the result to this file.
 The code cell can be run using _run cell_ button or using jupyter notebook keyboard shortcut.
 
@@ -84,7 +84,7 @@ git merge origin/main
 ```
 Note however that `git` may report issues when you try to merge our upstream changes with your own if you have uncommitted changes in your directory, or if you have made changes that conflict with changes we have made in the main repo.
 
-We will do our best to avoid making any changes that are likely to cause conflicts. You can generally assume that the `week_N.inpy` files will not be updated and can be freely edited and committed. (You should not assume this about `utils.py` or `requirements.txt` -- try to avoid editing these files if you can.) If conflicting changes do become necessary, for example to fix significant errors in one of the supplied scripts, we will announce it on Moodle and explain what you'll need to do about it.
+We will do our best to avoid making any changes that are likely to cause conflicts. You can generally assume that the `week_N.ipynb` files will not be updated and can be freely edited and committed. (You should not assume this about `utils.py` or `requirements.txt` -- try to avoid editing these files if you can.) If conflicting changes do become necessary, for example to fix significant errors in one of the supplied scripts, we will announce it on Moodle and explain what you'll need to do about it.
 
 We recommend using `git` to track your own changes as you work on the exercises. Commit your work at appropriate intervals and only `fetch/merge` new changes when your own changes are up to date.
 
