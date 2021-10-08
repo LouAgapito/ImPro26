@@ -34,9 +34,12 @@
 
 ## About
 
-This repository contains lab exercises for the [COMP0026 Image Processing](https://moodle.ucl.ac.uk/enrol/index.php?id=1381) module for taught MSc students at UCL, delivered in Autumn 2021. Exercises are designed to be attempted in the on-campus lab sessions on Thursday mornings, though you are free to do additional work in your own time if you wish.
+This repository contains lab exercises for the [COMP0026 Image Processing](https://moodle.ucl.ac.uk/enrol/index.php?id=1381) module for taught MSc students at UCL, delivered in Autumn 2021. 
+Exercises are designed to be attempted in the on-campus lab sessions on Thursday mornings, though you are free to do additional work in your own time if you wish.
 
-Lab attendance will be monitored, but the exercises are **not graded**. They are intended as learning experiences, to help you understand and apply different machine learning algorithms. You are welcome to discuss and help each other with these tasks and to ask for assistance and clarification from the TAs, but there is nothing to be gained by simply copying each others' work.
+Lab attendance will be monitored, but the exercises are **not graded**. 
+They are intended as learning experiences, to help you understand and apply different image processing algorithms. 
+You are welcome to discuss and help each other with these tasks and to ask for assistance and clarification from the TAs, but there is nothing to be gained by simply copying each others' work.
 
 ### Contents
 
@@ -95,7 +98,7 @@ git stash apply
 
 ## Python Setup
 
-The exercises require a local installation of Python 3, along with a number of additional packages for numerical programming, plotting and machine learning. We suggest using [Anaconda](https://www.anaconda.com/products/individual-d) / [Miniconda](https://docs.conda.io/en/latest/miniconda.html) with the latest stable release of Python (currently 3.9.7) as it already have most of the required packages already installed in its' default environment. If you know and prefer [python.org](https://www.python.org/downloads/) you are welcome to use that instead.
+The exercises require a local installation of Python 3, along with a number of additional packages for numerical programming, plotting and image processing. We suggest using [Anaconda](https://www.anaconda.com/products/individual-d) / [Miniconda](https://docs.conda.io/en/latest/miniconda.html) with the latest stable release of Python (currently 3.9.7) as it already have most of the required packages already installed in its' default environment. If you know and prefer [python.org](https://www.python.org/downloads/) you are welcome to use that instead.
 
 (Although we recommend the latest Python, the code has also been tested on Python 3.6.8, which is the version currently installed on some of the CS lab machines. It is possible, albeit suboptimal, to set up and run the exercises on one of those machines via SSH.)
 
