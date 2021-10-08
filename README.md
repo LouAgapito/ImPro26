@@ -98,7 +98,7 @@ git stash apply
 
 ## Python Setup
 
-The exercises require a local installation of Python 3, along with a number of additional packages for numerical programming, plotting and machine learning. We suggest using [Anaconda](https://www.anaconda.com/products/individual-d) / [Miniconda](https://docs.conda.io/en/latest/miniconda.html) with the latest stable release of Python (currently 3.9.7) as it already have most of the required packages already installed in its' default environment. If you know and prefer [python.org](https://www.python.org/downloads/) you are welcome to use that instead.
+The exercises require a local installation of Python 3, along with a number of additional packages for numerical programming, plotting and image processing. We suggest using [Anaconda](https://www.anaconda.com/products/individual-d) / [Miniconda](https://docs.conda.io/en/latest/miniconda.html) with the latest stable release of Python (currently 3.9.7) as it already have most of the required packages already installed in its' default environment. If you know and prefer [python.org](https://www.python.org/downloads/) you are welcome to use that instead.
 
 (Although we recommend the latest Python, the code has also been tested on Python 3.6.8, which is the version currently installed on some of the CS lab machines. It is possible, albeit suboptimal, to set up and run the exercises on one of those machines via SSH.)
 
