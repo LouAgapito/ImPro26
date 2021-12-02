@@ -198,3 +198,58 @@ def four_point_transform(image, pts, dst=None):
     warped = cv2.warpPerspective(image, M, (maxWidth, maxHeight))
     # return the warped image
     return warped
+
+def draw_corners(image, corners_map):
+    """Draw a point for each possible corner."""
+    
+    color_img = cv2.cvtColor(image[:,:,0], cv2.COLOR_GRAY2BGR)
+    for each_corner in corners_map:
+        cv2.circle(color_img, (each_corner[1], each_corner[0]), 1, (255,0,0), -1)
+    return color_img
+
+def load_image(path_name):
+    image = cv2.imread(path_name)
+    grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    return grayscale_image
+
+def apply_kernel(image, kernel):
+    kernel_size = kernel.shape[0]
+
+    padding_amount = int((kernel_size - 1) / 2)
+    rows = image.shape[0] + 2 * padding_amount
+    cols = image.shape[1] + 2 * padding_amount
+    channels = image.shape[2]
+    padded_image_placeholder = np.zeros((rows, cols, channels))
+    padded_image_placeholder[padding_amount:rows-padding_amount, padding_amount:cols-padding_amount, :] = image
+
+    filtered_image = np.zeros(image.shape)
+
+    for each_channel in range(channels):
+        padded_2d_image = padded_image_placeholder[:,:,each_channel]
+        filtered_2d_image = filtered_image[:,:,each_channel]
+        width = padded_2d_image.shape[0]
+        height = padded_2d_image.shape[1]
+        for i in range(width-kernel_size+1):
+            for j in range(height-kernel_size+1):
+                current_block = padded_2d_image[i:i+kernel_size, j:j+kernel_size]
+                convoluted_value = np.sum(current_block * kernel)
+                filtered_2d_image[i][j] = convoluted_value
+        filtered_image[:,:,each_channel] = filtered_2d_image
+
+    return filtered_image
+
+def get_gaussian_filter(kernel_size, sigma):
+    kernel = np.zeros((kernel_size, kernel_size))
+    denom = 2 * np.pi * sigma * sigma
+    samples = np.arange(-int(kernel_size/2), int(kernel_size/2) + 1)
+
+    for i in range(len(samples)):
+        for j in range(len(samples)):
+            x = samples[i]
+            y = samples[j]
+            num = np.exp(-1*(((x*x) + (y*y)) / (2*sigma*sigma)))
+            val = num / np.sqrt(denom)
+            kernel[i][kernel_size - j - 1] = val
+    kernel = kernel / kernel.sum()
+    
+    return kernel
