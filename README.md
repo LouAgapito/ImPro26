@@ -9,24 +9,24 @@
     git clone https://github.com/LouAgapito/ImPro26.git
     ```
 * Create and activate a virtual environment:
-    ```
-    cd labs
-    conda create -n myenv
-    conda activate myenv
+    ```shell
+    cd ImPro26
+    conda create -n impro26 python=3.9 # Choose a python version here
+    conda activate impro26
     ```
 * Install Python package requirements:
     ```sh
-    # after you activate the environment
+    # after you activate the environment!
+    conda install jupyter
     pip install -r requirements.txt
     ```
 * Start jupyter server
   ```sh
-  # move to the correct directory
-  cd notebooks_dir/
   # start the server
   jupyter lab
   # or
   jupyter notebook
+  # Find the week_N.ipynb
   ```
 * Read the week's lab exercises notebook `week_N.ipynb`
 * Add your code to the script `week_N.ipynb`
