@@ -34,7 +34,7 @@
 
 ## About
 
-This repository contains lab exercises for the [COMP0026 Image Processing](https://moodle.ucl.ac.uk/enrol/index.php?id=1381) module for taught undergrad and MSc students at UCL, delivered in Autumn 2021. 
+This repository contains lab exercises for the [COMP0026 Image Processing] module for taught undergrad and MSc students at UCL, delivered in Autumn 2024. 
 Exercises are designed to be attempted in the on-campus lab sessions on Thursday mornings, though you are free to do additional work in your own time if you wish.
 
 Lab attendance will be monitored, but the exercises are **not graded**. 
